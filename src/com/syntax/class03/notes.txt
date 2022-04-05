@@ -1,0 +1,68 @@
+Selenium Class 3
+
+why do we need Xpath and Css Selector?
+    Developers will not provide all the locators in html
+    by using xpath and css we can identify elements with any given attributes
+
+What is an Xpath?
+    Xpath is like a query language which helps us to identify elements
+    uniquely on the web page
+
+Types of Xpath :
+    Absolute Xpath - will start from the starting note of the html
+                     it always starts with single slash (/)
+                     e.g. /html/body/div/div/div
+
+    Relative Xpath - starts from any node in the html
+                     it always starts with double slash //
+
+Syntax for relative xpath:
+//tagName[@attribute = 'attribute value']
+
+Example: //input[@id ='email']
+
+Identifying elements by its text:
+//TagName[text()='text']
+//h2[text()='Connect with friends and the world around you on Facebook.']
+
+Identifying elements by using contains method
+//TagName[contains(@attribute, 'partial attribute value')]
+
+Starts-with will identify the element with partial starting value
+//TagName[starts-with(@attribute,'partial starting attribute')]
+
+//button[starts-with(@data-testid, 'royal')]
+
+ends-with was used in xpath 1.0, we are using 2.0 and this method is not available
+
+<div> division
+<img> image
+<h>   header
+<li>  list
+<ul>  unordered list
+<ol>  ordered list
+<br>  breaking line
+
+Advanced Xpath
+is based on parent and child, sibling relationship
+
+Identifying elements by following sibling
+//TagName[@attribute = 'attribute value']/following-sibling::tagName
+
+when we are going through sibling
+//input[@id = 'calFromDate']/following-sibling::img
+
+identifying elements by preceding siblings
+//TagName[@attribute = 'attribute value']/preceding-sibling ::tagName
+//span[text() = '& Orders']/preceding-sibling::span
+
+identifying elements by parents
+//TagName[@attribute = 'attribute value']/parent ::parentTagName
+//span[text()= '& Orders']/parent::a
+
+identifying an element by its ancestor
+//TagName[@attribute= 'attribute value']/ancestor ::ancestorTagName
+//input[@id = 'email']/ancestor::form
+
+Identifying element by index
+(//img[@class ='ui-datepicker-trigger'])[2]

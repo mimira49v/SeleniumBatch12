@@ -1,0 +1,64 @@
+Selenium Class 4
+
+CSS Selector (Cascading style sheet)
+it is another way of locating elements on the web page
+
+Syntax :
+tagName[attribute= 'attribute value']
+Example Facebook :
+
+button[type= 'submit']
+
+CSS does not give an opportunity to locate the element by its text
+
+Shortcuts for CSS:
+Shortcut for ClassName -> "."
+
+Syntax: tagName.classNameValue
+        input.button
+
+Shortcut for ID -> '#'
+Syntax: tagName#IdValue
+
+Example Amazon :
+input#twotabsearchtextbox
+
+contains() method in css:
+* symbol represents contains method
+
+Example Facebook :
+input[placeholder *= 'Email']
+input[placeholder *= 'phone']
+tagName[attribute *= 'attribute value']
+
+Starts with method in css :
+^ (Circumflex) symbol represents starts with method
+tagName[attribute ^= 'starting attribute value']
+
+ends-with method in css:
+$ symbol represents ends-with method in css
+tagName[attribute $= 'attribute value']
+Example :
+http://hrm.syntaxtechs.net/humanresources/symfony/web/index.php/auth/login
+img[src $= 'syntax.png']
+
+Xpath vs CSS
+    CSS cannot locate the elements by text whereas xpath can
+    no ends with method in xpath
+    css is faster than xpath (finding elements)
+    css has shortcuts
+    no advanced css
+    css has more simple syntax than Xpath
+
+WebElement Commands:
+consists of several methods where we can perform an action and get the element state
+on the webpage
+
+isEnabled()   --> boolean value
+isDisplayed() --> boolean value
+isSelected()  --> boolean value
+clear()       --> void
+getText()     --> String value
+getAttribute()--> String value
+submit()      --> void
+

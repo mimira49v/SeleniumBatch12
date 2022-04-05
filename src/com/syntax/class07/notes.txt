@@ -1,0 +1,10 @@
+Selenium class 7
+
+Handling multiple windows(Tabs):
+In order to handle multiple windows we will be using:
+getWindowHandle()
+getWindowHandles()
+
+WindowHandle():
+is a unique ID that holds the address of the window or a tab
+It is approximately a 40 alphanumeric character ID

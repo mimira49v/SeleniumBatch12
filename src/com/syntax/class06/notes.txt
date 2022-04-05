@@ -1,0 +1,22 @@
+Selenium Class 6
+
+Alerts:
+Alert is a pop-up message, Alert takes a complete focus of our main page that we are working on.
+We can not proceed until its handled.
+
+3 Types of Alerts:
+1.web based alerts/html alerts - we can simply inspect and perform needed actions
+2.Javascript alerts/browser alerts - we can handle these alerts by using switchTo method
+                                     we cannot inspect any of javascript alerts
+3.Windows based alerts - we cannot handle with Selenium
+
+Types of JS alerts:
+1.Simple alert   - click ok
+2.Confirmation alert - either cancel or click ok
+3.prompt alert - enter text and then click ok
+
+To handle JS alerts we only have 4 methods:
+1. accept() - click ok
+2. dismiss() - click cancel
+3. getText()
+4. sendKeys()
