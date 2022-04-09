@@ -29,3 +29,24 @@ Implicit wait is usually set to 20 seconds. If your element is found in any time
 the remaining time will be ignored and your script will move on the next line or action
 
 If the element is not found in a given time, ONLY then you will get an execution
+Synchronization:
+is the process of bringing the speed of two or more components the same level
+in this case we are bringing out script and page load to the same speed level
+
+Thread.sleep() -- static wait / unconditional wait
+
+Types of selenium waits:
+implicit wait
+explicit wait
+fluent wait
+
+
+Implicit wait :
+it tells the WebDriver to wait for the certain amount of time before throwing an exception
+it will only be written once and will be applied to the whole session of the execution
+We can say that implicit wait is the global wait
+
+Implicit wait is usually set to 20 seconds. If your element is found in any time between given time
+the remaining time will be ignored and your script will move on the next line or action
+
+If the element is not found in a given time, ONLY then you will get an execution

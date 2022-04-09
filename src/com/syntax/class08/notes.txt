@@ -1,0 +1,45 @@
+Selenium class 8
+
+Implicit wait :
+will be applied for find element method
+
+Explicit wait or WebDriver wait :
+Is used to tell the WebDriver to wait for a certain condition before throwing an
+exception for a specified condition.
+
+Explicit wait works with ExpectedConditions class and waits util certain conditions
+are met or the given time is achieved.
+
+* this sign in xpath is a wild card which can identify any tag name
+http://syntaxprojects.com/dynamic-data-loading-demo.php (web site used)
+//*[contains(text(), 'Welcome')]
+
+Fluent wait --> global wait
+it is used to tell the webDriver to wait for certain conditions before throwing an exception
+
+Implicit wait = waits to locate the element
+Explicit wait = waits until certain condition
+Fluent wait = sets timeouts, polling and ignores needed exceptions in the given time period
+
+WebTables:
+WebTables are elements on the webpage, which are constructed by having rows and columns
+Types of the WebTables:
+1) Static
+2) Dynamic
+
+WebTables consist of different sections or parts :
+
+<table>
+    <thead>
+        <tr>
+            <th></th> -- column data or heading data
+        <tr>
+    </thead>
+    <tbody>
+            <tr>
+                <tdata> -- table data
+            <tr>
+        <tbody>
+    <table>
+
+<table>
