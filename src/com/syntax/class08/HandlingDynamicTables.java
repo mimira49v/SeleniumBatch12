@@ -12,7 +12,7 @@ public class HandlingDynamicTables {
         System.setProperty("webdriver.chrome.driver", "drivers/chromedriver.exe");
         WebDriver driver = new ChromeDriver();
         driver.get("http://secure.smartbearsoftware.com/samples/testcomplete11/WebOrders/login.aspx");
-
+        // Login information and click
         WebElement username = driver.findElement(By.id("ctl00_MainContent_username"));
         username.sendKeys("Tester");
         WebElement password = driver.findElement(By.id("ctl00_MainContent_password"));
@@ -28,7 +28,7 @@ public class HandlingDynamicTables {
             if(rowText.contains("Bob Feather")){
                 List<WebElement> checkBoxes = driver.findElements(By.xpath("//table[@class = 'SampleTable']/tbody/tr/td[1]"));
 
-                // needs to have one element thats why we using " get(i) "
+                // needs to have one element that's why we using " get(i) "
                 // get(i-1) is because we are starting from 1 and not from 0
                 checkBoxes.get(i-1).click();
 
