@@ -27,15 +27,11 @@ public class HandlingDynamicTables {
             // If it matches the string Bob Feather passes the brackets
             if(rowText.contains("Bob Feather")){
                 List<WebElement> checkBoxes = driver.findElements(By.xpath("//table[@class = 'SampleTable']/tbody/tr/td[1]"));
-
                 // needs to have one element that's why we using " get(i) "
                 // get(i-1) is because we are starting from 1 and not from 0
+                // That's how we can get an object 0 in the header
                 checkBoxes.get(i-1).click();
-
-
             }
-
-
         }
     }
 }
