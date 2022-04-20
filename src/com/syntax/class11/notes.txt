@@ -1,0 +1,4 @@
+Selenium Class 11
+If regular click does not work you can use the alternative way of having Actions class click method.
+Upload Documents:
+In order to upload documents using selenium we simply do "sendKeys(filePath)"

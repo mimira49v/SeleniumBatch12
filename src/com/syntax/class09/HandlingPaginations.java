@@ -61,13 +61,11 @@ public class HandlingPaginations {
                         confirmDelete.click();
                         break;
                     }
-
                 }
                 if (flag) {
                     WebElement nextButton = driver.findElement(By.linkText("Next"));
                     nextButton.click();
                 }
-
             }
         }
     }
